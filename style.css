@@ -540,3 +540,49 @@ footer {
   background: #513568 !important;
   box-shadow: 0 0 0 2px #b98aff55;
 }
+
+/* Crew Me — Polished Search Results */
+
+#search-results {
+  display: grid;
+  gap: 10px;
+  margin-top: 16px;
+}
+
+#search-results .search-result {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  padding: 15px 17px;
+  background: #21182e;
+  border: 1px solid #644a80;
+  border-radius: 15px;
+  color: #e9d5ff;
+  text-decoration: none;
+  transition: background .2s, border-color .2s;
+}
+
+#search-results .search-result strong {
+  color: #e6c6ff;
+  font-size: 1rem;
+  text-decoration: none;
+}
+
+#search-results .search-result span {
+  color: #cbbbd8;
+  font-size: .88rem;
+  line-height: 1.5;
+  text-decoration: none;
+}
+
+#search-results .search-result:hover,
+#search-results .search-result:focus-visible {
+  background: #38264d;
+  border-color: #c59af8;
+}
+
+@media (max-width: 600px) {
+  #search-results .search-result {
+    padding: 14px;
+  }
+}

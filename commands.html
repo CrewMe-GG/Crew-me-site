@@ -170,11 +170,16 @@
       name.textContent = command ? command.textContent : "Command";
 
       const description = document.createElement("span");
-      description.textContent = item.textContent.trim();
+      const fullText = item.textContent.trim();
+      const commandText = command ? command.textContent.trim() : "";
+      description.textContent = fullText.startsWith(commandText)
+        ? fullText.slice(commandText.length).replace(/^\\s*[—–:-]\\s*/, "").trim()
+        : fullText;
 
       link.append(name, description);
 
       link.addEventListener("click", () => {
+        input.blur();
         items.forEach(el => el.classList.remove("command-highlight"));
         item.classList.add("command-highlight");
         item.hidden = false;
