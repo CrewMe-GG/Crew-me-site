@@ -7,7 +7,7 @@
   <title>Command Guide | Crew Me</title>
   <link rel="stylesheet" href="style.css">
 </head>
-<body>
+<body class="guide-page commands-page">
 <header>
   <a class="brand" href="./" aria-label="Crew Me home"><img src="crew-me-logo-cropped.png" alt="Crew Me" class="brand-logo"></a>
   <nav>
@@ -18,85 +18,128 @@
     <a href="privacy.html">Privacy</a>
   </nav>
 </header>
-<main>
+<main class="guide-main">
   <span class="tag">Help & documentation</span>
   <h1>Command Guide</h1>
   <p class="lead">Everything you need to get started with Crew Me, from checking staff activity to managing meetings and reviews.</p>
 
+        <div class="command-tools">
+          <label for="command-search">✧ Search commands</label>
+          <input id="command-search" type="search"
+                 placeholder="Try activity, meeting, warning..."
+                 autocomplete="off">
+          <p id="command-count" aria-live="polite"></p>
+        </div>
+        <nav class="category-nav" aria-label="Command categories">
+        <a href="#command-category-1">Getting started</a><a href="#command-category-2">Staff activity</a><a href="#command-category-3">Absences</a><a href="#command-category-4">Warnings and staff reviews</a><a href="#command-category-5">Meetings and attendance</a><a href="#command-category-6">Private staff discussions</a><a href="#command-category-7">Server configuration and appearance</a><a href="#command-category-8">Permissions and troubleshooting</a><a href="#command-category-9">Need help?</a></nav><div class="guide-intro">
+          <div class="guide-intro-icon">✦</div>
+          <div>
+            <strong>Find your perfect command ♡</strong>
+            <p>Search for a command or jump to a category below.</p>
+          </div>
+        </div>
+
+
   <div class="card">
-    <h2>Getting started</h2>
+    <h2 id="command-category-1">Getting started</h2>
     <p>Use Discord's slash commands by typing <strong>/</strong> in a server where Crew Me is installed.</p>
     <p>Server administrators should begin with <code>/crewme_setup</code> to configure the management role, staff role, and time zone. Configure individual features before using them.</p>
     <p>Use <code>/help</code> in Discord to open this guide privately.</p>
   </div>
 
-  <h2>Staff activity</h2>
+  <h2 id="command-category-2">Staff activity</h2>
   <ul>
-    <li><code>/activity</code> — View weekly staff activity. A member can optionally be specified.</li>
-    <li><code>/leaderboard</code> — Post the current staff activity leaderboard.</li>
-    <li><code>/staff_profile</code> — View a staff member's profile.</li>
-    <li><code>/log_event</code> — Record activity credits for a staff event.</li>
-    <li><code>/voice_settings</code> — Choose which voice channels count toward staff activity.</li>
-    <li><code>/monthly_report</code> — View a staff member's monthly performance report.</li>
+    <li class="command-item"><code>/activity</code> — View weekly staff activity. A member can optionally be specified.</li>
+    <li class="command-item"><code>/leaderboard</code> — Post the current staff activity leaderboard.</li>
+    <li class="command-item"><code>/staff_profile</code> — View a staff member's profile.</li>
+    <li class="command-item"><code>/log_event</code> — Record activity credits for a staff event.</li>
+    <li class="command-item"><code>/voice_settings</code> — Choose which voice channels count toward staff activity.</li>
+    <li class="command-item"><code>/monthly_report</code> — View a staff member's monthly performance report.</li>
   </ul>
 
-  <h2>Absences</h2>
+  <h2 id="command-category-3">Absences</h2>
   <ul>
-    <li><code>/setup_absences</code> — Configure the absence system and its channel.</li>
-    <li><code>/absences</code> — View active staff absences.</li>
-    <li><code>/absence_history</code> — View completed absences, optionally for a specific member.</li>
+    <li class="command-item"><code>/setup_absences</code> — Configure the absence system and its channel.</li>
+    <li class="command-item"><code>/absences</code> — View active staff absences.</li>
+    <li class="command-item"><code>/absence_history</code> — View completed absences, optionally for a specific member.</li>
   </ul>
 
-  <h2>Warnings and staff reviews</h2>
+  <h2 id="command-category-4">Warnings and staff reviews</h2>
   <ul>
-    <li><code>/warning_channel</code> — Configure the channel for warning management.</li>
-    <li><code>/staff_warn</code> — Create a disciplinary warning.</li>
-    <li><code>/staff_warnings</code> — View a staff member's warning history.</li>
-    <li><code>/staff_warning_notify</code> — Send a saved warning to the staff member by direct message.</li>
-    <li><code>/staff_warning_revoke</code> — Revoke a warning while preserving its audit record.</li>
-    <li><code>/demotion_reviews</code> — View pending staff activity reviews.</li>
+    <li class="command-item"><code>/warning_channel</code> — Configure the channel for warning management.</li>
+    <li class="command-item"><code>/staff_warn</code> — Create a disciplinary warning.</li>
+    <li class="command-item"><code>/staff_warnings</code> — View a staff member's warning history.</li>
+    <li class="command-item"><code>/staff_warning_notify</code> — Send a saved warning to the staff member by direct message.</li>
+    <li class="command-item"><code>/staff_warning_revoke</code> — Revoke a warning while preserving its audit record.</li>
+    <li class="command-item"><code>/demotion_reviews</code> — View pending staff activity reviews.</li>
   </ul>
   <p>Pending activity reviews are handled through review embeds with Reviewed and Dismissed buttons. Review decisions may require a reason.</p>
 
-  <h2>Meetings and attendance</h2>
+  <h2 id="command-category-5">Meetings and attendance</h2>
   <ul>
-    <li><code>/meeting_create</code> — Schedule a meeting with a voice channel and announcement channel.</li>
-    <li><code>/meetings</code> — List upcoming meetings.</li>
-    <li><code>/meeting_attendance</code> — View attendance for a meeting.</li>
-    <li><code>/meeting_add_attendee</code> — Manually record a staff member's attendance.</li>
-    <li><code>/meeting_remove_attendee</code> — Remove an attendance record.</li>
-    <li><code>/meeting_cancel</code> — Cancel a scheduled meeting.</li>
+    <li class="command-item"><code>/meeting_create</code> — Schedule a meeting with a voice channel and announcement channel.</li>
+    <li class="command-item"><code>/meetings</code> — List upcoming meetings.</li>
+    <li class="command-item"><code>/meeting_attendance</code> — View attendance for a meeting.</li>
+    <li class="command-item"><code>/meeting_add_attendee</code> — Manually record a staff member's attendance.</li>
+    <li class="command-item"><code>/meeting_remove_attendee</code> — Remove an attendance record.</li>
+    <li class="command-item"><code>/meeting_cancel</code> — Cancel a scheduled meeting.</li>
   </ul>
   <p>Meeting creation requires a title, start time, duration, voice channel, and announcement channel. Use Discord's command prompts to enter the required values.</p>
 
-  <h2>Private staff discussions</h2>
+  <h2 id="command-category-6">Private staff discussions</h2>
   <ul>
-    <li><code>/staff_ticket_setup</code> — Configure the private ticket category and management log channel.</li>
-    <li><code>/staff_ticket</code> — Open a management-initiated staff discussion.</li>
-    <li><code>/staff_ticket_close</code> — Close and lock a staff discussion ticket.</li>
-    <li><code>/staff_ticket_add</code> — Give a participant access to a staff ticket.</li>
-    <li><code>/staff_ticket_remove</code> — Remove a participant's ticket access.</li>
-    <li><code>/staff_ticket_history</code> — Review staff ticket history.</li>
+    <li class="command-item"><code>/staff_ticket_setup</code> — Configure the private ticket category and management log channel.</li>
+    <li class="command-item"><code>/staff_ticket</code> — Open a management-initiated staff discussion.</li>
+    <li class="command-item"><code>/staff_ticket_close</code> — Close and lock a staff discussion ticket.</li>
+    <li class="command-item"><code>/staff_ticket_add</code> — Give a participant access to a staff ticket.</li>
+    <li class="command-item"><code>/staff_ticket_remove</code> — Remove a participant's ticket access.</li>
+    <li class="command-item"><code>/staff_ticket_history</code> — Review staff ticket history.</li>
   </ul>
 
-  <h2>Server configuration and appearance</h2>
+  <h2 id="command-category-7">Server configuration and appearance</h2>
   <ul>
-    <li><code>/crewme_setup</code> — Configure management and staff roles and the server time zone.</li>
-    <li><code>/set_embed_color</code> — Set the color used in Crew Me embeds.</li>
-    <li><code>/set_server_avatar</code> — Set Crew Me's server-specific profile picture.</li>
-    <li><code>/reset_appearance</code> — Reset the configured color and server-specific avatar.</li>
-    <li><code>/staff_dashboard</code> — View an overview of staff activity and management records.</li>
-    <li><code>/crewme_info</code> — View public information about Crew Me.</li>
+    <li class="command-item"><code>/crewme_setup</code> — Configure management and staff roles and the server time zone.</li>
+    <li class="command-item"><code>/set_embed_color</code> — Set the color used in Crew Me embeds.</li>
+    <li class="command-item"><code>/set_server_avatar</code> — Set Crew Me's server-specific profile picture.</li>
+    <li class="command-item"><code>/reset_appearance</code> — Reset the configured color and server-specific avatar.</li>
+    <li class="command-item"><code>/staff_dashboard</code> — View an overview of staff activity and management records.</li>
+    <li class="command-item"><code>/crewme_info</code> — View public information about Crew Me.</li>
   </ul>
 
-  <h2>Permissions and troubleshooting</h2>
+  <h2 id="command-category-8">Permissions and troubleshooting</h2>
   <p>Some commands are restricted to server administrators or authorized management roles. Others require a feature to be configured first. The command may not be available if your Discord role lacks permission or the feature has not been set up.</p>
   <p>If a command fails, check the required options, the configured channels and roles, and Crew Me's Discord permissions. Contact your server management team for access questions.</p>
 
-  <h2>Need help?</h2>
+  <h2 id="command-category-9">Need help?</h2>
   <p>For general support, contact <a href="mailto:support@crewmegg.com">support@crewmegg.com</a>.</p>
   <p><a href="terms.html">Terms of Service</a> · <a href="privacy.html">Privacy Policy</a></p>
 </main>
 <footer>© 2026 Crew Me · Independent Discord bot project · Not affiliated with Discord.</footer>
+
+<script>
+(function () {
+  const input = document.getElementById("command-search");
+  const items = [...document.querySelectorAll(".command-item")];
+  const count = document.getElementById("command-count");
+
+  function update() {
+    const query = input.value.toLowerCase().trim();
+    let visible = 0;
+
+    items.forEach(item => {
+      const matches = item.textContent.toLowerCase().includes(query);
+      item.hidden = !matches;
+      if (matches) visible++;
+    });
+
+    count.textContent = query
+      ? `${visible} matching commands`
+      : `${items.length} commands available`;
+  }
+
+  input.addEventListener("input", update);
+  update();
+})();
+</script>
 </body>
 </html>

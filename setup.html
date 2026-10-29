@@ -7,7 +7,7 @@
   <title>Getting Started | Crew Me</title>
   <link rel="stylesheet" href="style.css">
 </head>
-<body>
+<body class="guide-page setup-page">
 <header>
   <a class="brand" href="./" aria-label="Crew Me home"><img src="crew-me-logo-cropped.png" alt="Crew Me" class="brand-logo"></a>
   <nav>
@@ -19,10 +19,18 @@
   </nav>
 </header>
 
-<main>
+<main class="guide-main">
   <span class="tag">Getting started</span>
   <h1>Set up your crew.</h1>
   <p class="lead">Welcome to Crew Me! Follow this guide to configure your Discord server, organize staff management, and get your team ready to go.</p>
+        <div class="guide-intro">
+          <div class="guide-intro-icon">✿</div>
+          <div>
+            <strong>Your setup journey ♡</strong>
+            <p>Follow each step at your own pace. You've got this!</p>
+          </div>
+        </div>
+
 
   <div class="card">
     <h2>Before you begin</h2>
@@ -35,7 +43,7 @@
     <p><strong>Important:</strong> Keep management permissions limited to trusted people. Do not give the Bot Administrator permission unless it is genuinely necessary; configure only the permissions its features require.</p>
   </div>
 
-  <h2>Step 1 — Configure your server</h2>
+  <h2 class="setup-step-heading"><span class="setup-step-badge">1</span>Step 1 — Configure your server</h2>
   <p>Start with the core configuration command:</p>
   <p><code>/crewme_setup</code></p>
   <p>Choose your management role, staff role, and server time zone when prompted.</p>
@@ -46,37 +54,37 @@
   </ul>
   <p>Use the actual time zone offered by the command rather than guessing. If the configuration command is unavailable, check your server permissions and confirm that Crew Me is online.</p>
 
-  <h2>Step 2 — Set up absences</h2>
+  <h2 class="setup-step-heading"><span class="setup-step-badge">2</span>Step 2 — Set up absences</h2>
   <p>Use:</p>
   <p><code>/setup_absences</code></p>
   <p>Select the channel for private absence threads and the role allowed to manage absences. Crew Me will post an absence panel in the selected channel.</p>
   <p>Check that Crew Me has permission to view the channel, send messages, create private threads, and manage threads as needed. Authorized managers must also have the access required to view and manage those threads.</p>
   <p>Staff can use the panel to submit absence dates and a reason. Absences are notifications, not approval requests.</p>
 
-  <h2>Step 3 — Configure voice activity</h2>
+  <h2 class="setup-step-heading"><span class="setup-step-badge">3</span>Step 3 — Configure voice activity</h2>
   <p>Use:</p>
   <p><code>/voice_settings</code></p>
   <p>Choose which voice channels qualify for staff activity credits. Review the channel list carefully so that only the intended channels count.</p>
   <p>Staff voice time is tracked only in eligible channels according to the Bot's tracking rules. Test a short session and check the results with <code>/activity</code>.</p>
 
-  <h2>Step 4 — Configure warnings</h2>
+  <h2 class="setup-step-heading"><span class="setup-step-badge">4</span>Step 4 — Configure warnings</h2>
   <p>Use:</p>
   <p><code>/warning_channel</code></p>
   <p>Select the private management channel used for warning records and management actions. Check the channel permissions so staff members cannot access private records unless they are meant to.</p>
   <p>Authorized managers can use <code>/staff_warn</code> to create a warning and <code>/staff_warnings</code> to view a member's disciplinary history. A saved warning does not automatically mean the member has been notified.</p>
 
-  <h2>Step 5 — Configure private staff tickets</h2>
+  <h2 class="setup-step-heading"><span class="setup-step-badge">5</span>Step 5 — Configure private staff tickets</h2>
   <p>Use:</p>
   <p><code>/staff_ticket_setup</code></p>
   <p>Choose the category for private staff discussion channels and the management log channel.</p>
   <p>Review the category's permissions before opening a ticket. Only the intended participants and authorized management should have access. Test the workflow with a trusted staff account before using it for sensitive discussions.</p>
 
-  <h2>Step 6 — Start using meetings</h2>
+  <h2 class="setup-step-heading"><span class="setup-step-badge">6</span>Step 6 — Start using meetings</h2>
   <p>Use <code>/meeting_create</code> to schedule a meeting. You'll be asked for a title, start time, duration, voice channel, and announcement channel.</p>
   <p>Staff can respond to meeting invitations, and eligible voice attendance can be recorded. Management can use the meeting and attendance commands to review records or correct attendance when necessary.</p>
   <p>Check the Bot's permissions in both the announcement channel and the meeting voice channel before scheduling your first meeting.</p>
 
-  <h2>Step 7 — Understand staff activity</h2>
+  <h2 class="setup-step-heading"><span class="setup-step-badge">7</span>Step 7 — Understand staff activity</h2>
   <p>Once your staff role and voice settings are configured, these commands are useful:</p>
   <ul>
     <li><code>/activity</code> — View weekly activity.</li>
@@ -88,7 +96,7 @@
   </ul>
   <p>Activity requirements and review outcomes should be reviewed by management. Do not treat an automated activity result as an automatic disciplinary decision.</p>
 
-  <h2>Step 8 — Customize your server</h2>
+  <h2 class="setup-step-heading"><span class="setup-step-badge">8</span>Step 8 — Customize your server</h2>
   <ul>
     <li><code>/set_embed_color</code> — Customize the color of Crew Me embeds.</li>
     <li><code>/set_server_avatar</code> — Set a server-specific Bot profile picture.</li>
@@ -99,14 +107,14 @@
   <h2>Final checklist</h2>
   <div class="card">
     <ul>
-      <li>Core staff and management roles are configured.</li>
-      <li>The server time zone is correct.</li>
-      <li>The absence panel is posted in the intended channel.</li>
-      <li>Eligible voice channels are configured and activity tracking has been tested.</li>
-      <li>Warning and ticket channels have appropriate access restrictions.</li>
-      <li>A test meeting can be scheduled and its attendance reviewed.</li>
-      <li>Managers know how to access the dashboard and pending reviews.</li>
-      <li>Staff have been informed about activity tracking and staff record handling.</li>
+      <li class="checklist-item"><label><input type="checkbox"> <span>Core staff and management roles are configured.</span></label></li>
+      <li class="checklist-item"><label><input type="checkbox"> <span>The server time zone is correct.</span></label></li>
+      <li class="checklist-item"><label><input type="checkbox"> <span>The absence panel is posted in the intended channel.</span></label></li>
+      <li class="checklist-item"><label><input type="checkbox"> <span>Eligible voice channels are configured and activity tracking has been tested.</span></label></li>
+      <li class="checklist-item"><label><input type="checkbox"> <span>Warning and ticket channels have appropriate access restrictions.</span></label></li>
+      <li class="checklist-item"><label><input type="checkbox"> <span>A test meeting can be scheduled and its attendance reviewed.</span></label></li>
+      <li class="checklist-item"><label><input type="checkbox"> <span>Managers know how to access the dashboard and pending reviews.</span></label></li>
+      <li class="checklist-item"><label><input type="checkbox"> <span>Staff have been informed about activity tracking and staff record handling.</span></label></li>
     </ul>
   </div>
 

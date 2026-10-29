@@ -3,38 +3,130 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="Crew Me is an independent Discord bot for staff activity, absences, meetings, warnings, and management reviews.">
+  <meta name="description" content="Crew Me helps Discord communities manage staff activity, meetings, absences, warnings, and more.">
+  <meta name="theme-color" content="#171120">
   <title>Crew Me — Your crew. Your rules. One bot.</title>
+  <link rel="icon" href="crew-me-logo-cropped.png">
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-<header>
-  <a class="brand" href="./" aria-label="Crew Me home"><img src="crew-me-logo-cropped.png" alt="Crew Me" class="brand-logo"></a>
-  <nav>
+<header class="site-header">
+  <a class="brand" href="./" aria-label="Crew Me homepage">
+    <img class="brand-logo" src="crew-me-logo-cropped.png" alt="Crew Me">
+  </a>
+  <nav aria-label="Main navigation">
     <a href="./" aria-current="page">Home</a>
-    <a href="setup.html">Setup Guide</a>
+    <a href="setup.html">Get Started</a>
     <a href="commands.html">Commands</a>
     <a href="terms.html">Terms</a>
     <a href="privacy.html">Privacy</a>
   </nav>
 </header>
+
 <main>
-  <span class="tag">Discord staff management</span>
-  <h1>Your crew.<br>Your rules.<br>One bot.</h1>
-  <p class="lead">Crew Me helps Discord communities organize staff activity, absences, meetings, warnings, private staff discussions, and management reviews.</p>
+  <section class="hero">
+    <div class="hero-glow"></div>
+    <span class="eyebrow">✦ YOUR NEW FAVORITE STAFF BOT ✦</span>
+    <h1>Your crew.<br><span class="gradient-text">Your rules.</span><br>One bot.</h1>
+    <p class="hero-description">
+      Meet Crew Me — the adorable little powerhouse that makes
+      managing your Discord staff team easier, more organized,
+      and a whole lot less stressful.
+    </p>
+    <div class="hero-actions">
+      <a class="button" href="setup.html">✦ Get Started</a>
+      <a class="button button-outline" href="commands.html">Explore Commands</a>
+    </div>
+    <div class="hero-note">Made with care for Discord communities ♡</div>
+  </section>
 
-  <div class="card">
-    <h2>Built for your team</h2>
-    <p>Keep staff-management workflows organized with configurable roles, activity tracking, meeting attendance, and review records.</p>
-    <p>Features depend on server configuration and the permissions granted to the Bot. Server administrators remain responsible for their community's decisions and access settings.</p>
-  </div>
+  <section class="section" id="features">
+    <div class="section-heading">
+      <span class="eyebrow">MADE FOR YOUR TEAM</span>
+      <h2>Everything your crew needs <span class="gradient-text">♡</span></h2>
+      <p>All your staff management essentials, organized in one cozy place.</p>
+    </div>
 
-  <a class="button" href="terms.html">Terms of Service</a>
-  <a class="button" href="privacy.html">Privacy Policy</a>
+    <div class="feature-grid">
+      <article class="feature-card">
+        <span class="feature-icon">✧</span>
+        <h3>Activity Tracking</h3>
+        <p>Keep track of staff messages, eligible voice activity, event credits, and weekly progress.</p>
+      </article>
+      <article class="feature-card">
+        <span class="feature-icon">☾</span>
+        <h3>Staff Absences</h3>
+        <p>Give staff a simple way to submit absences and keep management informed.</p>
+      </article>
+      <article class="feature-card">
+        <span class="feature-icon">♡</span>
+        <h3>Meetings & Attendance</h3>
+        <p>Schedule staff meetings, collect responses, and organize attendance records.</p>
+      </article>
+      <article class="feature-card">
+        <span class="feature-icon">✿</span>
+        <h3>Private Staff Tickets</h3>
+        <p>Handle sensitive staff discussions in dedicated channels with controlled access.</p>
+      </article>
+      <article class="feature-card">
+        <span class="feature-icon">✦</span>
+        <h3>Warnings & Reviews</h3>
+        <p>Manage disciplinary records and review staff activity without automatic demotions.</p>
+      </article>
+      <article class="feature-card">
+        <span class="feature-icon">☆</span>
+        <h3>Personalization</h3>
+        <p>Customize Crew Me's embed colors, server avatar, roles, and time zone settings.</p>
+      </article>
+    </div>
+  </section>
 
-  <h2>Questions or privacy requests?</h2>
-  <p>Contact <a href="mailto:support@crewmegg.com">support@crewmegg.com</a>.</p>
+  <section class="section">
+    <div class="section-heading">
+      <span class="eyebrow">EASY AS 1, 2, 3</span>
+      <h2>Ready to get started?</h2>
+      <p>Getting your staff organized doesn't have to be complicated.</p>
+    </div>
+    <div class="steps-grid">
+      <article class="step-card">
+        <span class="step-number">01</span>
+        <h3>Prepare your server</h3>
+        <p>Set up your staff and management roles and make sure Crew Me has the permissions it needs.</p>
+      </article>
+      <article class="step-card">
+        <span class="step-number">02</span>
+        <h3>Configure Crew Me</h3>
+        <p>Use <code>/crewme_setup</code> to choose your roles and time zone, then configure your preferred features.</p>
+      </article>
+      <article class="step-card">
+        <span class="step-number">03</span>
+        <h3>Manage your crew</h3>
+        <p>Track activity, organize meetings, manage absences, and keep your staff records in one place.</p>
+      </article>
+    </div>
+  </section>
+
+  <section class="cta-panel">
+    <span class="eyebrow">A LITTLE MORE ORGANIZED, A LOT MORE YOU</span>
+    <h2>Your crew deserves something cute and capable. ♡</h2>
+    <p>Explore the setup guide and see what Crew Me can do for your community.</p>
+    <a class="button" href="setup.html">Read the Setup Guide ✦</a>
+  </section>
 </main>
-<footer>© 2026 Crew Me · Independent Discord bot project · Not affiliated with Discord.</footer>
+
+<footer class="site-footer">
+  <div>
+    <strong>✦ Crew Me</strong>
+    <p>Staff management, made a little sweeter.</p>
+  </div>
+  <div class="footer-links">
+    <a href="setup.html">Setup</a>
+    <a href="commands.html">Commands</a>
+    <a href="terms.html">Terms</a>
+    <a href="privacy.html">Privacy</a>
+    <a href="mailto:support@crewmegg.com">Support</a>
+  </div>
+  <p class="footer-note">© 2026 Crew Me · Independent project · Not affiliated with Discord.</p>
+</footer>
 </body>
 </html>
