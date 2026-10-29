@@ -20,3 +20,37 @@
     width: 125px;
   }
 }
+
+/* Compact Crew Me header logo */
+header .brand {
+  display: inline-flex;
+  align-items: center;
+  flex: 0 0 auto;
+  width: 160px;
+  height: 60px;
+  overflow: hidden;
+}
+
+header .brand-logo {
+  display: block;
+  width: 160px;
+  height: 60px;
+  max-width: 100%;
+  object-fit: contain;
+}
+
+header {
+  align-items: center;
+}
+
+@media (max-width: 600px) {
+  header .brand {
+    width: 135px;
+    height: 52px;
+  }
+
+  header .brand-logo {
+    width: 135px;
+    height: 52px;
+  }
+}
