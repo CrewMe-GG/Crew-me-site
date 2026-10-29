@@ -498,3 +498,45 @@ footer {
     gap: 7px;
   }
 }
+
+/* Crew Me — Search Results */
+
+#search-results {
+  display: grid;
+  gap: 9px;
+  margin-top: 15px;
+}
+
+.search-result {
+  display: flex;
+  flex-direction: column;
+  gap: 3px;
+  padding: 13px 15px;
+  border: 1px solid #72518f;
+  border-radius: 13px;
+  background: #3a294c;
+  color: #e9d5ff;
+  text-decoration: none;
+  overflow-wrap: anywhere;
+}
+
+.search-result:hover,
+.search-result:focus-visible {
+  background: #503663;
+  border-color: #d4aeff;
+}
+
+.search-result span {
+  font-size: .83rem;
+  color: #d4c5df;
+}
+
+.command-item {
+  scroll-margin-top: 25px;
+}
+
+.command-highlight {
+  border-color: #d8b4fe !important;
+  background: #513568 !important;
+  box-shadow: 0 0 0 2px #b98aff55;
+}

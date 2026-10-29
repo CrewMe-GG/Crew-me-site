@@ -116,30 +116,78 @@
 </main>
 <footer>© 2026 Crew Me · Independent Discord bot project · Not affiliated with Discord.</footer>
 
+
 <script>
 (function () {
   const input = document.getElementById("command-search");
-  const items = [...document.querySelectorAll(".command-item")];
   const count = document.getElementById("command-count");
+  const items = [...document.querySelectorAll(".command-item")];
+
+  if (!input || !count) return;
+
+  const results = document.createElement("div");
+  results.id = "search-results";
+  results.setAttribute("aria-label", "Matching commands");
+  count.insertAdjacentElement("afterend", results);
+
+  items.forEach((item, index) => {
+    item.id = "crew-command-" + (index + 1);
+  });
 
   function update() {
     const query = input.value.toLowerCase().trim();
-    let visible = 0;
+    results.replaceChildren();
+
+    let matches = [];
 
     items.forEach(item => {
-      const matches = item.textContent.toLowerCase().includes(query);
-      item.hidden = !matches;
-      if (matches) visible++;
+      const matched = item.textContent.toLowerCase().includes(query);
+      item.hidden = query ? !matched : false;
+
+      if (query && matched) matches.push(item);
     });
 
     count.textContent = query
-      ? `${visible} matching commands`
-      : `${items.length} commands available`;
+      ? matches.length + " matching commands"
+      : items.length + " commands available";
+
+    if (!query) return;
+
+    if (!matches.length) {
+      const empty = document.createElement("p");
+      empty.textContent = "No matching commands found ♡";
+      results.appendChild(empty);
+      return;
+    }
+
+    matches.forEach(item => {
+      const link = document.createElement("a");
+      link.href = "#" + item.id;
+      link.className = "search-result";
+
+      const command = item.querySelector("code");
+      const name = document.createElement("strong");
+      name.textContent = command ? command.textContent : "Command";
+
+      const description = document.createElement("span");
+      description.textContent = item.textContent.trim();
+
+      link.append(name, description);
+
+      link.addEventListener("click", () => {
+        items.forEach(el => el.classList.remove("command-highlight"));
+        item.classList.add("command-highlight");
+        item.hidden = false;
+      });
+
+      results.appendChild(link);
+    });
   }
 
   input.addEventListener("input", update);
   update();
 })();
 </script>
+
 </body>
 </html>
