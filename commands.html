@@ -1,0 +1,101 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Crew Me Discord bot slash command guide for staff and server management.">
+  <title>Command Guide | Crew Me</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header>
+  <a class="brand" href="./">✦ Crew Me</a>
+  <nav>
+    <a href="./">Home</a>
+    <a href="commands.html" aria-current="page">Commands</a>
+    <a href="terms.html">Terms</a>
+    <a href="privacy.html">Privacy</a>
+  </nav>
+</header>
+<main>
+  <span class="tag">Help & documentation</span>
+  <h1>Command Guide</h1>
+  <p class="lead">Everything you need to get started with Crew Me, from checking staff activity to managing meetings and reviews.</p>
+
+  <div class="card">
+    <h2>Getting started</h2>
+    <p>Use Discord's slash commands by typing <strong>/</strong> in a server where Crew Me is installed.</p>
+    <p>Server administrators should begin with <code>/crewme_setup</code> to configure the management role, staff role, and time zone. Configure individual features before using them.</p>
+    <p>Use <code>/help</code> in Discord to open this guide privately.</p>
+  </div>
+
+  <h2>Staff activity</h2>
+  <ul>
+    <li><code>/activity</code> — View weekly staff activity. A member can optionally be specified.</li>
+    <li><code>/leaderboard</code> — Post the current staff activity leaderboard.</li>
+    <li><code>/staff_profile</code> — View a staff member's profile.</li>
+    <li><code>/log_event</code> — Record activity credits for a staff event.</li>
+    <li><code>/voice_settings</code> — Choose which voice channels count toward staff activity.</li>
+    <li><code>/monthly_report</code> — View a staff member's monthly performance report.</li>
+  </ul>
+
+  <h2>Absences</h2>
+  <ul>
+    <li><code>/setup_absences</code> — Configure the absence system and its channel.</li>
+    <li><code>/absences</code> — View active staff absences.</li>
+    <li><code>/absence_history</code> — View completed absences, optionally for a specific member.</li>
+  </ul>
+
+  <h2>Warnings and staff reviews</h2>
+  <ul>
+    <li><code>/warning_channel</code> — Configure the channel for warning management.</li>
+    <li><code>/staff_warn</code> — Create a disciplinary warning.</li>
+    <li><code>/staff_warnings</code> — View a staff member's warning history.</li>
+    <li><code>/staff_warning_notify</code> — Send a saved warning to the staff member by direct message.</li>
+    <li><code>/staff_warning_revoke</code> — Revoke a warning while preserving its audit record.</li>
+    <li><code>/demotion_reviews</code> — View pending staff activity reviews.</li>
+  </ul>
+  <p>Pending activity reviews are handled through review embeds with Reviewed and Dismissed buttons. Review decisions may require a reason.</p>
+
+  <h2>Meetings and attendance</h2>
+  <ul>
+    <li><code>/meeting_create</code> — Schedule a meeting with a voice channel and announcement channel.</li>
+    <li><code>/meetings</code> — List upcoming meetings.</li>
+    <li><code>/meeting_attendance</code> — View attendance for a meeting.</li>
+    <li><code>/meeting_add_attendee</code> — Manually record a staff member's attendance.</li>
+    <li><code>/meeting_remove_attendee</code> — Remove an attendance record.</li>
+    <li><code>/meeting_cancel</code> — Cancel a scheduled meeting.</li>
+  </ul>
+  <p>Meeting creation requires a title, start time, duration, voice channel, and announcement channel. Use Discord's command prompts to enter the required values.</p>
+
+  <h2>Private staff discussions</h2>
+  <ul>
+    <li><code>/staff_ticket_setup</code> — Configure the private ticket category and management log channel.</li>
+    <li><code>/staff_ticket</code> — Open a management-initiated staff discussion.</li>
+    <li><code>/staff_ticket_close</code> — Close and lock a staff discussion ticket.</li>
+    <li><code>/staff_ticket_add</code> — Give a participant access to a staff ticket.</li>
+    <li><code>/staff_ticket_remove</code> — Remove a participant's ticket access.</li>
+    <li><code>/staff_ticket_history</code> — Review staff ticket history.</li>
+  </ul>
+
+  <h2>Server configuration and appearance</h2>
+  <ul>
+    <li><code>/crewme_setup</code> — Configure management and staff roles and the server time zone.</li>
+    <li><code>/set_embed_color</code> — Set the color used in Crew Me embeds.</li>
+    <li><code>/set_server_avatar</code> — Set Crew Me's server-specific profile picture.</li>
+    <li><code>/reset_appearance</code> — Reset the configured color and server-specific avatar.</li>
+    <li><code>/staff_dashboard</code> — View an overview of staff activity and management records.</li>
+    <li><code>/crewme_info</code> — View public information about Crew Me.</li>
+  </ul>
+
+  <h2>Permissions and troubleshooting</h2>
+  <p>Some commands are restricted to server administrators or authorized management roles. Others require a feature to be configured first. The command may not be available if your Discord role lacks permission or the feature has not been set up.</p>
+  <p>If a command fails, check the required options, the configured channels and roles, and Crew Me's Discord permissions. Contact your server management team for access questions.</p>
+
+  <h2>Need help?</h2>
+  <p>For general support, contact <a href="mailto:support@crewmegg.com">support@crewmegg.com</a>.</p>
+  <p><a href="terms.html">Terms of Service</a> · <a href="privacy.html">Privacy Policy</a></p>
+</main>
+<footer>© 2026 Crew Me · Independent Discord bot project · Not affiliated with Discord.</footer>
+</body>
+</html>
