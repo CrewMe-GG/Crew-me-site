@@ -1,1 +1,77 @@
-<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Privacy Policy | Crew Me</title><link rel="stylesheet" href="style.css"></head><body><header><a class="brand" href="./">✦ Crew Me</a><nav><a href="./">Home</a><a href="terms.html">Terms</a><a href="privacy.html">Privacy</a></nav></header><main><span class="tag">Legal</span><h1>Privacy Policy</h1><p class="lead">Effective date: [INSERT PUBLICATION DATE]</p><p class="notice"><strong>Draft for review:</strong> This policy describes the intended functionality. Confirm the actual deployed bot's data handling, hosting, retention, and deletion behavior before publication.</p><h2>1. Who operates Crew Me</h2><p>Crew Me is an independent Discord staff-management application operated by <strong>[INSERT OPERATOR NAME OR BUSINESS]</strong>. Contact: <strong>[INSERT SUPPORT EMAIL OR PUBLIC SUPPORT URL]</strong>.</p><h2>2. Information we may process</h2><p>Depending on the features a server enables, Crew Me may process Discord user IDs, guild IDs, channel and role IDs, usernames or display names, server settings, message activity counts, voice-channel join and leave times, meeting RSVPs and attendance, staff application responses, absence dates and reasons, disciplinary records, management notes, and staff ticket messages or transcripts if transcript collection is enabled.</p><p><strong>Message content:</strong> Routine activity counting should not require retaining the text of ordinary chat messages. Private tickets and application responses may contain text deliberately submitted to the Bot. The final implementation must be checked against this statement.</p><h2>3. Why we process information</h2><p>We process information to operate requested staff-management functions, apply server settings, produce activity and attendance reports, deliver requested notifications, troubleshoot problems, prevent misuse, and maintain service security.</p><h2>4. Who can see the information</h2><p>Configured server managers may access records relevant to their server, including applications, warnings, attendance, and tickets. Staff may see their own information or public team summaries where enabled. Bot operators and authorized infrastructure providers may have technical access as necessary to operate and secure the service. Discord itself processes information under its own policies. Discord server administrators may have access to channels through their Discord permissions.</p><h2>5. Storage and service providers</h2><p>Data will be stored on <strong>[INSERT ACTUAL HOSTING PROVIDER AND REGION]</strong> using <strong>[INSERT ACTUAL DATABASE AND BACKUP ARRANGEMENT]</strong>. We do not sell personal information to advertisers. We will list any material third-party processors used to operate the service once hosting is finalized.</p><h2>6. Retention</h2><p>Retention periods must be set and implemented before public launch. Planned periods: <strong>[INSERT RETENTION FOR ACTIVITY HISTORY]</strong>, <strong>[INSERT RETENTION FOR APPLICATIONS]</strong>, <strong>[INSERT RETENTION FOR WARNINGS]</strong>, and <strong>[INSERT RETENTION FOR TICKETS/TRANSCRIPTS]</strong>. Backup retention: <strong>[INSERT BACKUP RETENTION]</strong>. Certain records may be kept longer where legally required or necessary for security.</p><h2>7. Your choices and requests</h2><p>Server administrators can choose which features to enable and what information staff are asked to submit. To request access to or deletion of information associated with your Discord account, contact <strong>[INSERT SUPPORT CONTACT]</strong> and provide enough information to identify the relevant Discord account and server. We will explain any limits on deletion, including legitimate security, legal, or backup constraints. Do not send passwords or identity documents.</p><h2>8. Security</h2><p>We intend to use permission checks, restricted management views, protected credentials, and regular backups. No online service can guarantee absolute security. The final implementation and operational safeguards should be verified before launch.</p><h2>9. Children and sensitive information</h2><p>Crew Me is not designed to solicit sensitive personal information. Server operators should not ask applicants or staff to submit unnecessary sensitive data. Use of Discord remains subject to Discord's age requirements and applicable law.</p><h2>10. International use</h2><p>Information may be processed in the country where the hosting infrastructure is located. We will identify that location when hosting is selected and provide additional information if legally required.</p><h2>11. Changes</h2><p>We may update this policy as features and data practices change. The effective date above will be revised, and material changes will be communicated through <strong>[INSERT ANNOUNCEMENT METHOD]</strong>.</p><h2>12. Contact</h2><p>Privacy questions or data requests: <strong>[INSERT SUPPORT EMAIL OR PUBLIC SUPPORT URL]</strong>.</p></main><footer>© 2026 Crew Me · <a href="terms.html">Terms of Service</a></footer></body></html>
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Learn what information Crew Me processes, how staff records are used, and how to make a privacy request.">
+  <title>Privacy Policy | Crew Me</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header>
+  <a class="brand" href="./">✦ Crew Me</a>
+  <nav>
+    <a href="./">Home</a>
+    <a href="terms.html">Terms</a>
+    <a href="privacy.html" aria-current="page">Privacy</a>
+  </nav>
+</header>
+<main>
+  <span class="tag">Legal</span>
+  <h1>Privacy Policy</h1>
+  <p class="lead">Effective date: October 29, 2026</p>
+
+  <p>This Privacy Policy explains how Crew Me ("we," "us," or "the Bot"), an independent Discord staff-management project operated by its creator, processes information when Discord communities use the Bot.</p>
+
+  <h2>1. Information we process</h2>
+  <p>The information processed depends on which Crew Me features a server uses. It may include:</p>
+  <ul>
+    <li><strong>Discord identifiers:</strong> user, server (guild), channel, role, and message identifiers needed for Bot functions and configuration.</li>
+    <li><strong>Staff activity:</strong> weekly message counts, eligible voice-channel time, activity credits, and active-day records.</li>
+    <li><strong>Staff membership and evaluations:</strong> membership dates, weekly evaluation results, activity requirements, consecutive failures, and review status.</li>
+    <li><strong>Absences:</strong> absence dates, return dates, reasons entered by users, status, and records of when an absence was ended and by whom.</li>
+    <li><strong>Warnings and management reviews:</strong> warning levels and reasons, the identifiers of the people involved, notification and revocation details, review outcomes, decision reasons, and timestamps.</li>
+    <li><strong>Meetings:</strong> meeting titles, start and end times, relevant channel and message identifiers, RSVP responses, and attendance durations.</li>
+    <li><strong>Staff tickets:</strong> ticket topics, participant identifiers, status, timestamps, and links to related warning records.</li>
+    <li><strong>Configuration:</strong> management and staff roles, selected channels, time zone, eligible voice channels, appearance settings, and other server-specific settings.</li>
+  </ul>
+
+  <h2>2. Message content and Discord communications</h2>
+  <p>For routine staff activity counting, Crew Me counts qualifying messages from staff members. The activity database stores counts and related statistics, not the text of ordinary messages as activity records.</p>
+  <p>Users and administrators may enter text into fields such as absence reasons, warning reasons, review explanations, and ticket topics. Ticket conversations themselves take place in Discord channels and are subject to Discord's handling of messages and the permissions configured for those channels. The Bot's ticket database stores ticket metadata; it does not contain a separate transcript table in the current database schema.</p>
+
+  <h2>3. Why information is used</h2>
+  <p>Information is used to provide the Bot's requested functions, calculate staff activity, record meeting attendance, manage absences and warnings, support management reviews, maintain server settings, send notifications, troubleshoot issues, and protect the service from misuse.</p>
+
+  <h2>4. Access and disclosure</h2>
+  <p>Access depends on the feature, Bot permissions, database access, and Discord channel permissions. Authorized server managers may access staff records through management functions. Staff may be able to view their own records or information made available by their server. The project operator may access the Bot database and server infrastructure to maintain and troubleshoot the service.</p>
+  <p>Discord processes account information and communications under its own policies. Information may also be processed by infrastructure providers used to host the website or operate the Bot. We do not sell personal information as part of operating this project.</p>
+
+  <h2>5. Storage and security</h2>
+  <p>The Bot stores structured staff-management records in an SQLite database on the server where the Bot is deployed. The public website is hosted through GitHub Pages. The specific Bot hosting provider, hosting region, and any infrastructure backup arrangements have not been independently documented in this policy; contact us for current information.</p>
+  <p>Access should be limited to people who need it to operate the service. No online service or storage method can be guaranteed completely secure. Do not submit passwords, payment-card details, government identification, or unnecessary sensitive information through Crew Me.</p>
+
+  <h2>6. Retention</h2>
+  <p>Crew Me does not currently have a documented, general automatic deletion schedule for all staff-management records. Records may remain in the database until they are manually deleted, removed by a feature-specific action, or otherwise removed through maintenance. Some actions remove specific records, while other actions preserve historical records for accountability.</p>
+  <p>We do not promise a fixed retention period for activity history, absences, warnings, meetings, tickets, or review records. The time required to complete a deletion request may depend on the record, technical constraints, and any applicable legal or legitimate recordkeeping needs. Backup retention, if backups exist, may differ from the live database.</p>
+
+  <h2>7. Privacy requests and choices</h2>
+  <p>You may request access to, correction of, or deletion of information associated with your Discord account by emailing <a href="mailto:support@crewmegg.com">support@crewmegg.com</a>. Include your Discord user ID and the relevant server or feature so we can identify the records. Do not send your password or identity documents.</p>
+  <p>We may need to verify that a request relates to you or that you are authorized to make it. Some records may be retained where required by law, necessary to address security or abuse, or needed to preserve legitimate administrative records. We will explain any applicable limitation. Server administrators may also need to remove information from Discord channels they control.</p>
+  <p>Server administrators decide which features to enable and are responsible for explaining their local staff-management practices to affected members.</p>
+
+  <h2>8. Children</h2>
+  <p>Crew Me is not intended to collect unnecessary personal information from children. Users must meet Discord's applicable age requirements and any additional legal requirements that apply to them. Server operators must follow applicable rules when deciding who may participate in their communities.</p>
+
+  <h2>9. International processing</h2>
+  <p>Information may be processed in the locations where Discord, GitHub Pages, and the Bot's hosting infrastructure operate. The Bot hosting region has not been confirmed in this policy. Data-protection rights may vary depending on your location and applicable law.</p>
+
+  <h2>10. Changes to this Policy</h2>
+  <p>This Policy may be updated when Crew Me's features or data practices change. The effective date will be revised when a new version is published. Material changes may be announced through the website or an official Crew Me announcement channel.</p>
+
+  <h2>11. Contact</h2>
+  <p>For privacy questions or data requests, contact <a href="mailto:support@crewmegg.com">support@crewmegg.com</a>.</p>
+</main>
+<footer>© 2026 Crew Me · Independent Discord bot project · <a href="terms.html">Terms of Service</a></footer>
+</body>
+</html>
